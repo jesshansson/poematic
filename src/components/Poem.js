@@ -35,7 +35,7 @@ export const Poem = () => {
     <Body>
       <Title>Poematic</Title>
       <form onSubmit={handleFormSubmit}>
-        <input
+        <Input
           type="text"
           value={name}
           onChange={handleNameChange}
@@ -55,8 +55,33 @@ font-family: 'Caveat', cursive;
 
 const Body = styled.div`
 text-align:center;
-margin-top: 40px;
+border: 1px solid #ECB390;
+margin: 40px 100px;
+border-radius: 30px;
+box-shadow: 5px 10px #ECB390;;
 `
 
 const Button = styled.button`
-margin: 0px 10px`
+margin: 0px 10px;
+padding: 5px;
+border-radius: 5px;
+border: 1px solid black;
+transition: 0.2s ease-in-out;
+
+
+&:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}`
+
+const Input = styled.input`
+padding: 5px;
+border-radius: 5px;
+border: none;
+transition: 0.2s ease-in-out;
+
+
+&:hover {
+  transform: scale(1.05);
+  border: none
+}`
