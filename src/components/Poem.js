@@ -58,7 +58,13 @@ text-align:center;
 border: 1px solid #ECB390;
 margin: 40px 100px;
 border-radius: 30px;
-box-shadow: 5px 5px #ECB390;;
+box-shadow: 5px 5px #ECB390;
+padding-bottom: 20px;
+
+@media (max-width: 668px){ 
+  margin: 40px 40px;
+  ;
+  }
 `
 
 const Button = styled.button`
@@ -81,6 +87,10 @@ border: none;
 transition: 0.2s ease-in-out;
 margin: 5px 10px 30px;
 
+@media (max-width: 668px){ 
+  margin: 10px ;
+  max-width: 50vw;
+  }
 
 &:hover {
   transform: scale(1.05);
