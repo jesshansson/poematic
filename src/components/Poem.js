@@ -58,7 +58,7 @@ text-align:center;
 border: 1px solid #ECB390;
 margin: 40px 100px;
 border-radius: 30px;
-box-shadow: 5px 10px #ECB390;;
+box-shadow: 5px 5px #ECB390;;
 `
 
 const Button = styled.button`
@@ -79,6 +79,7 @@ padding: 5px;
 border-radius: 5px;
 border: none;
 transition: 0.2s ease-in-out;
+margin: 5px 10px 30px;
 
 
 &:hover {
